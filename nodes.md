@@ -36,7 +36,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 26 | 4h |https://raw.githubusercontent.com/ts-sf/fly/main/v2|
 | ✅ | 562 | 8h |https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/v2ray.config.txt|
 | ✅ | 20 | 12h |https://raw.githubusercontent.com/HakurouKen/free-node/main/public|
-| ✅ | 25 | 1d |https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt|
+| ✅ | 24 | 1d |https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt|
 | ✅ | 32 | 1d |https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/v2ray.txt|
 | ❌ | 0 | 1d |https://raw.githubusercontent.com/xieshunxi1/subscribe_clash_v2ray/main/subscribe/v2ray.txt|
 | ✅ | 838 | idk |https://raw.githubusercontent.com/mostafasadeghifar/v2ray-config/main/config_file.txt|
@@ -49,6 +49,6 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed|
 | ❌ | 410650 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
-| ✅ | 312 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
+| ✅ | 302 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
 | ✅ | 457 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
 <!---| ✅ | 0 | 1h |https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt|-->
