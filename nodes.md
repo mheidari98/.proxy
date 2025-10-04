@@ -7,8 +7,8 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 |:---------:|:---------:|:-------------:|-----|
 | ✅ | 51 | 4h |https://raw.githubusercontent.com/wrfree/free/main/README.md|
 | ❌ | 0 | 6h |https://raw.githubusercontent.com/mianfeifq/share/main/README.md|
-| ✅ | 41 | 1d |https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/README.md|
-| ✅ | 3 | 1h |https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub|
+| ✅ | 36 | 1d |https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/README.md|
+| ✅ | 4 | 1h |https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub|
 | ✅ | 5491 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt|
 | ✅ | 200 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity|
 | ✅ | 61 |2h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/airport_merge_base64.txt|
@@ -32,8 +32,8 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 548 | 3h |https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num|
 | ✅ | 19 | 1h |https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt|
 | ✅ | 232 | 1h |https://raw.githubusercontent.com/ZywChannel/free/main/sub|
-| ✅ | 46 | 3h |https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt|
-| ✅ | 35 | 4h |https://raw.githubusercontent.com/ts-sf/fly/main/v2|
+| ✅ | 48 | 3h |https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt|
+| ✅ | 32 | 4h |https://raw.githubusercontent.com/ts-sf/fly/main/v2|
 | ✅ | 562 | 8h |https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/v2ray.config.txt|
 | ✅ | 6 | 12h |https://raw.githubusercontent.com/HakurouKen/free-node/main/public|
 | ✅ | 9 | 1d |https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt|
@@ -48,7 +48,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ❌ | 0 | 12h |https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed|
-| ❌ | 9006 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
+| ❌ | 9002 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
 | ✅ | 333 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
 | ✅ | 371 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
 <!---| ✅ | 0 | 1h |https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt|-->
