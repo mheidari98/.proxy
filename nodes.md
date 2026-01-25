@@ -40,7 +40,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 32 | 1d |https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/v2ray.txt|
 | ❌ | 0 | 1d |https://raw.githubusercontent.com/xieshunxi1/subscribe_clash_v2ray/main/subscribe/v2ray.txt|
 | ✅ | 838 | idk |https://raw.githubusercontent.com/mostafasadeghifar/v2ray-config/main/config_file.txt|
-| ✅ | 70 | idk |https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt|
+| ✅ | 61 | idk |https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt|
 | ❌ | 0 | idk |https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/base64/mix|
 | ❌ | 0 | idk |https://config.elaheniloofar.link|
 | ❌ | 0 | idk |https://tackserver-code.ir/api/json/mrpooya.xyz.json|
