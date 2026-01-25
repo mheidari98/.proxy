@@ -48,11 +48,11 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ❌ | 0 | 12h |https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed|
-| ❌ | 3149 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
+| ❌ | 2990 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
 | ✅ | 319 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
 | ✅ | 542 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
 | ✅ | 438 | 10m |https://raw.githubusercontent.com/SonzaiEkkusu/V2RayDumper/refs/heads/main/config.txt|
-| ✅ | 1139 | 6h |https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/submerge/converted.txt|
+| ✅ | 0 | 6h |https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/submerge/converted.txt|
 | ✅ | 724 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
 | ✅ | 1146 | 12h |https://raw.githubusercontent.com/xsparvin/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin|
 | ✅ | 1712 | 12h |https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt|
