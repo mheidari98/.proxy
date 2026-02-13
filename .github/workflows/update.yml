@@ -1,0 +1,48 @@
+name: update configs
+
+on:
+  push:
+    paths:
+      - 'nodes.md'
+  schedule:
+    - cron: '0 */1 * * *'  # @hourly
+
+jobs:
+  updateConfig:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v3
+      
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: execute py script 
+        run: python main.py
+
+      - name: Get current date
+        id: date
+        #run: echo "::set-output name=date::$(TZ=Asia/Tehran date +'%s')"
+        run: echo "date=$(TZ=Asia/Tehran date +'%Y/%m/%d %R')" >> $GITHUB_OUTPUT
+      
+      # https://github.com/stefanzweifel/git-auto-commit-action
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        id: auto-commit-action
+        with:
+          commit_message: "Update Configs at ${{ steps.date.outputs.date }}"
+          commit_options: '--no-verify --signoff'
+          commit_user_name: "mheidari98"
+          commit_user_email: "mahdih3idari@gmail.com"
+          # commit_author: Author <actions@github.com> 
+          
+
