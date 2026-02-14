@@ -7,7 +7,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 |:---------:|:---------:|:-------------:|-----|
 | ✅ | 51 | 4h |https://raw.githubusercontent.com/wrfree/free/main/README.md|
 | ❌ | 0 | 6h |https://raw.githubusercontent.com/mianfeifq/share/main/README.md|
-| ✅ | 131 | 1d |https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/README.md|
+| ✅ | 115 | 1d |https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/README.md|
 | ✅ | 18 | 1h |https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub|
 | ✅ | 5144 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt|
 | ✅ | 200 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity|
@@ -50,10 +50,10 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed|
 | ❌ | 7286 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
 | ✅ | 273 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
-| ✅ | 266 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
+| ✅ | 483 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
 | ✅ | 438 | 10m |https://raw.githubusercontent.com/SonzaiEkkusu/V2RayDumper/refs/heads/main/config.txt|
 | ✅ | 4208 | 6h |https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/submerge/converted.txt|
-| ✅ | 901 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
+| ✅ | 889 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
 | ✅ | 1169 | 12h |https://raw.githubusercontent.com/xsparvin/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin|
-| ✅ | 890 | 12h |https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt|
+| ✅ | 918 | 12h |https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt|
 <!---| ✅ | 0 | 1h |https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt|-->
