@@ -7,9 +7,9 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 |:---------:|:---------:|:-------------:|-----|
 | ✅ | 51 | 4h |https://raw.githubusercontent.com/wrfree/free/main/README.md|
 | ❌ | 0 | 6h |https://raw.githubusercontent.com/mianfeifq/share/main/README.md|
-| ✅ | 624 | 1d |https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/README.md|
+| ✅ | 629 | 1d |https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/README.md|
 | ✅ | 17 | 1h |https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub|
-| ✅ | 5243 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt|
+| ✅ | 5247 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt|
 | ✅ | 200 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity|
 | ✅ | 61 |2h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/airport_merge_base64.txt|
 | ✅ | 61 |2h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/EternityAir|
@@ -20,7 +20,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 2 | 2h |https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/ssr/ssrsub|
 | ✅ | 4 | 2h |https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/v2ray/v2raysub|
 | ❌ | 0 | idk |https://bn-chanll.cf/sub/ss|
-| ✅ | 241 | 8h |https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray|
+| ✅ | 232 | 8h |https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray|
 | ✅ | 0 | idk |https://rentry.co/cyru55/raw|
 | ❌ | 0 | idk |https://freefq.neocities.org/free.txt|
 | ❌ | 0 | idk |https://proxy.yugogo.xyz/sip002/sub|
@@ -35,7 +35,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 87 | 3h |https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt|
 | ✅ | 184 | 4h |https://raw.githubusercontent.com/ts-sf/fly/main/v2|
 | ✅ | 562 | 8h |https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/v2ray.config.txt|
-| ✅ | 27 | 12h |https://raw.githubusercontent.com/HakurouKen/free-node/main/public|
+| ✅ | 19 | 12h |https://raw.githubusercontent.com/HakurouKen/free-node/main/public|
 | ✅ | 25 | 1d |https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt|
 | ✅ | 32 | 1d |https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/v2ray.txt|
 | ❌ | 0 | 1d |https://raw.githubusercontent.com/xieshunxi1/subscribe_clash_v2ray/main/subscribe/v2ray.txt|
@@ -48,12 +48,12 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ❌ | 0 | 12h |https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed|
-| ❌ | 7930 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
+| ❌ | 7818 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
 | ✅ | 1037 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
 | ✅ | 438 | 10m |https://raw.githubusercontent.com/SonzaiEkkusu/V2RayDumper/refs/heads/main/config.txt|
-| ✅ | 3767 | 6h |https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/submerge/converted.txt|
-| ✅ | 1555 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
+| ✅ | 0 | 6h |https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/submerge/converted.txt|
+| ✅ | 1553 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
 | ✅ | 1169 | 12h |https://raw.githubusercontent.com/xsparvin/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin|
-| ✅ | 806 | 12h |https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt|
+| ✅ | 724 | 12h |https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt|
 <!---| ✅ | 0 | 1h |https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt|-->
