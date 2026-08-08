@@ -20,7 +20,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 2 | 2h |https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/ssr/ssrsub|
 | ✅ | 4 | 2h |https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/v2ray/v2raysub|
 | ❌ | 0 | idk |https://bn-chanll.cf/sub/ss|
-| ✅ | 24 | 8h |https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray|
+| ✅ | 33 | 8h |https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray|
 | ❌ | 0 | idk |https://rentry.co/cyru55/raw|
 | ❌ | 0 | idk |https://freefq.neocities.org/free.txt|
 | ❌ | 0 | idk |https://proxy.yugogo.xyz/sip002/sub|
@@ -48,14 +48,14 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ❌ | 0 | 12h |https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed|
-| ✅ | 6949 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
+| ✅ | 6942 | 5m |https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt|
 | ❌ | 0 | 1h |https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt|
 | ❌ | 0 | 3h |https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/v2ray.txt|
 | ✅ | 438 | 10m |https://raw.githubusercontent.com/SonzaiEkkusu/V2RayDumper/refs/heads/main/config.txt|
 | ✅ | 3620 | 6h |https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/submerge/converted.txt|
-| ✅ | 2006 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
+| ✅ | 2016 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
 | ✅ | 1221 | 12h |https://raw.githubusercontent.com/xsparvin/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin|
 | ✅ | 1220 | 12h |https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt|
-| ✅ | 485 | 2h |https://github.com/MhdiTaheri/V2rayCollector_Py/raw/refs/heads/main/sub/Mix/mix.txt|
+| ✅ | 487 | 2h |https://github.com/MhdiTaheri/V2rayCollector_Py/raw/refs/heads/main/sub/Mix/mix.txt|
 | ❌ | 0 | 1h |https://github.com/ALIILAPRO/v2rayNG-Config/blob/main/server.txt|
 <!---| ✅ | 0 | 1h |https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt|-->
