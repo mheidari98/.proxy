@@ -1,0 +1,64 @@
+name: update configs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'nodes.md'
+      - 'crawler.py'
+      - 'requirements.txt'
+      - 'tests/**'
+      - '.github/workflows/update.yml'
+  schedule:
+    - cron: '0 */1 * * *'  # @hourly
+
+# Serialized with every other workflow that pushes to main.
+concurrency:
+  group: push-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  updateConfig:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      
+      - name: setup python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: execute py script 
+        run: python crawler.py
+
+      - name: Get current date
+        id: date
+        #run: echo "::set-output name=date::$(TZ=Asia/Tehran date +'%s')"
+        run: echo "date=$(TZ=Asia/Tehran date +'%Y/%m/%d %R')" >> $GITHUB_OUTPUT
+      
+      # https://github.com/stefanzweifel/git-auto-commit-action
+      - uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
+        id: auto-commit-action
+        with:
+          commit_message: "Update Configs at ${{ steps.date.outputs.date }}"
+          commit_options: '--no-verify --signoff'
+          commit_user_name: "mheidari98"
+          commit_user_email: "mahdih3idari@gmail.com"
+          # commit_author: Author <actions@github.com> 
+          
