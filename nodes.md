@@ -8,11 +8,11 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 4438 | 12h |https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt|
 | ✅ | 1297 | 8h |https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/v2ray.config.txt|
 | ✅ | 435 | 3h |https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt|
-| ✅ | 12 | 1h |https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub|
+| ✅ | 11 | 1h |https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub|
 | ✅ | 15 | idk |https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt|
 | ✅ | 7955 | 4h |https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/all_valid_proxies.txt|
-| ✅ | 11371 | 1h |https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt|
-| ✅ | 8736 | 15m |https://raw.githubusercontent.com/fifthidea/sub/main/sub/sub-full-base64.txt|
+| ✅ | 11375 | 1h |https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt|
+| ✅ | 8737 | 15m |https://raw.githubusercontent.com/fifthidea/sub/main/sub/sub-full-base64.txt|
 | ✅ | 1751 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt|
 | ✅ | 1543 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0005.txt|
 | ✅ | 1436 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0006.txt|
