@@ -1,1 +1,1 @@
-proxyUtil @ git+https://github.com/mheidari98/proxyUtil@6ecf65545eee79e388f44aa69df24066927b2334
+proxyUtil @ git+https://github.com/mheidari98/proxyUtil@8656ff78e41d04c679a8a9306696440dc19b4a9c
