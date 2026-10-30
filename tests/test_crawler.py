@@ -112,6 +112,13 @@ class Run(unittest.TestCase):
     def setUp(self):
         self.root = Path(self.enterContext(tempfile.TemporaryDirectory()))
         (self.root / "nodes.md").write_text(NODES)
+        self.checked = []
+
+        def filter_configs(urls, published, strikes):
+            self.checked.append(list(urls))
+            return urls, strikes, ""
+
+        self.enterContext(patch.object(crawler, "filter_configs", filter_configs))
 
     def test_publishes_every_output_and_records_health(self):
         proxies = [f"vless://id{i}@example.com:443#upstream" for i in range(150)]
@@ -139,6 +146,49 @@ class Run(unittest.TestCase):
                 run(self.root)
         # the previously published list must survive the refusal
         self.assertEqual(len(base64.b64decode((self.root / "all").read_bytes()).splitlines()), 1000)
+
+    def test_unreachable_configs_leave_the_lists_but_stay_in_raw(self):
+        proxies = [f"vless://id{i}@h{i}.example.net:443" for i in range(150)]
+        dead = proxies[0]
+        drop_first = lambda urls, published, strikes: (  # noqa: E731
+            [u for u in urls if "h0." not in u],
+            {"h1.example.net:443": 1},
+            "",
+        )
+        with (
+            patch.object(crawler, "filter_configs", drop_first),
+            patch.object(crawler, "ScrapURLs", return_value=[result(proxies, http_status=200)]),
+        ):
+            run(self.root)
+        lines = lambda name: base64.b64decode((self.root / name).read_bytes()).decode().splitlines()
+        self.assertEqual(len(lines("all")), 149)
+        self.assertEqual(len(lines("raw")), 150)
+        self.assertTrue(all("h0." not in line for line in lines("vless")))
+        self.assertEqual(json.loads((self.root / "endpoint_strikes.json").read_text()), {"h1.example.net:443": 1})
+        state = json.loads((self.root / "source_status.json").read_text())
+        self.assertEqual(state["summary"]["unreachable_proxies"], 1)
+        self.assertNotIn(dead, "".join(lines("all")))
+
+    def test_a_filter_that_empties_the_list_is_ignored(self):
+        proxies = [f"vless://id{i}@h{i}.example.net:443" for i in range(150)]
+        with (
+            patch.object(crawler, "filter_configs", lambda urls, published, strikes: ([], strikes, "")),
+            patch.object(crawler, "ScrapURLs", return_value=[result(proxies, http_status=200)]),
+        ):
+            run(self.root)
+        self.assertEqual(
+            len(base64.b64decode((self.root / "all").read_bytes()).decode().splitlines()), 150
+        )
+
+    def test_drops_structurally_impossible_and_duplicate_proxies(self):
+        proxies = [f"vless://id{i}@h{i}.example.net:443" for i in range(150)]
+        proxies += ["vless://x@10.0.0.1:443", "vless://id0@h0.example.net:443?fp=chrome#again"]
+        with patch.object(crawler, "ScrapURLs", return_value=[result(proxies, http_status=200)]):
+            run(self.root)
+        state = json.loads((self.root / "source_status.json").read_text())
+        self.assertEqual(state["summary"]["published_proxies"], 150)
+        self.assertEqual(state["summary"]["rejected_proxies"], 1)
+        self.assertEqual(state["summary"]["duplicate_proxies"], 1)
 
     def test_counts_unparsable_proxies_as_invalid(self):
         proxies = [f"vless://id{i}@example.com:443" for i in range(150)]

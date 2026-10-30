@@ -12,8 +12,9 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from proxyUtil.health import endpoint_key, filter_configs
 from proxyUtil.net import ScrapURLs
-from proxyUtil.parsers import tagChanger, tagsChanger
+from proxyUtil.parsers import dedupe_proxies, reject_invalid, tagChanger, tagsChanger
 from proxyUtil.schemes import ss_scheme, trojan_scheme, vless_scheme, vmess_scheme
 
 LOG = logging.getLogger(__name__)
@@ -138,6 +139,14 @@ def atomic_write(path: Path, content: bytes) -> None:
     os.replace(tmp.name, path)
 
 
+def decode_list(path: Path) -> list[str]:
+    return base64.b64decode(path.read_bytes()).decode().splitlines() if path.exists() else []
+
+
+def publish(root: Path, name: str, configs: list[str]) -> None:
+    atomic_write(root / name, base64.b64encode("\n".join(configs).encode()))
+
+
 def run(root: Path | None = None) -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     root = root or Path(__file__).resolve().parent
@@ -152,34 +161,51 @@ def run(root: Path | None = None) -> None:
 
     canonical = canonicalize(results)
     invalid = sum(len(r.proxies) - len(canonical[r.url]) for r in results)
-    configs = [
-        tagChanger(proxy, campaign_tag(proxy))
-        for proxy in sorted({p for proxies in canonical.values() for p in proxies})
-    ]
+    candidates = sorted({p for proxies in canonical.values() for p in proxies})
+    usable, rejected = reject_invalid(candidates)
+    unique = dedupe_proxies(usable)  # same server, different spelling: keep one
+    raw = [tagChanger(proxy, campaign_tag(proxy)) for proxy in unique]
 
     # Never overwrite a good list with the fallout of a bad hour upstream.
-    previous_count = (
-        len(base64.b64decode(published.read_bytes()).splitlines()) if published.exists() else 0
-    )
-    if len(configs) < max(MIN_CONFIGS, previous_count * MIN_PREVIOUS_RATIO):
-        raise RuntimeError(f"refusing to publish {len(configs)} configs (previous {previous_count})")
+    previous = decode_list(published)
+    if len(raw) < max(MIN_CONFIGS, len(previous) * MIN_PREVIOUS_RATIO):
+        raise RuntimeError(f"refusing to publish {len(raw)} configs (previous {len(previous)})")
 
-    previous = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
-    state = build_state(results, canonical, previous, sources, now)
-    state["summary"] |= {"published_proxies": len(configs), "invalid_proxies": invalid}
+    strikes_path = root / "endpoint_strikes.json"
+    strikes = json.loads(strikes_path.read_text()) if strikes_path.exists() else {}
+    listed = {key for url in previous if (key := endpoint_key(url))}
+    configs, strikes, note = filter_configs(raw, listed, strikes)
+    if len(configs) < MIN_CONFIGS:  # a broken check must not empty the list
+        configs, note = raw, note or "too few configs survived: filter skipped"
+    if note:
+        LOG.warning(note)
+
+    state_previous = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
+    state = build_state(results, canonical, state_previous, sources, now)
+    state["summary"] |= {
+        "published_proxies": len(configs),
+        "invalid_proxies": invalid,
+        "rejected_proxies": sum(rejected.values()),
+        "duplicate_proxies": len(usable) - len(unique),
+        "unreachable_proxies": len(raw) - len(configs),
+    }
 
     for name, scheme in OUTPUTS.items():
-        lines = [config for config in configs if config.startswith(scheme)]
-        atomic_write(root / name, base64.b64encode("\n".join(lines).encode()))
+        publish(root, name, [config for config in configs if config.startswith(scheme)])
+    publish(root, "raw", raw)
+    atomic_write(strikes_path, (json.dumps(strikes, indent=0, sort_keys=True) + "\n").encode())
     atomic_write(nodes_path, update_nodes(markdown, results).encode())
     atomic_write(state_path, (json.dumps(state, indent=2, sort_keys=True) + "\n").encode())
 
     LOG.info(
-        "Published %d configs from %d valid sources in %.2fs (%d invalid)",
+        "Published %d of %d configs (%d invalid, %d duplicate, %d unreachable) from %d sources in %.2fs",
         len(configs),
+        len(raw),
+        invalid + sum(rejected.values()),
+        len(usable) - len(unique),
+        len(raw) - len(configs),
         state["summary"]["valid_sources"],
         time.monotonic() - started,
-        invalid,
     )
 
 

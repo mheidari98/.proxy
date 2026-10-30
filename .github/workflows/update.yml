@@ -45,7 +45,9 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: execute py script 
-        run: python crawler.py
+        run: |
+          ulimit -n 8192
+          python crawler.py
 
       - name: Get current date
         id: date
