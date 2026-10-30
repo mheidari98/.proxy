@@ -12,14 +12,14 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 15 | idk |https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt|
 | ✅ | 7955 | 4h |https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/all_valid_proxies.txt|
 | ✅ | 11375 | 1h |https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt|
-| ✅ | 8737 | 15m |https://raw.githubusercontent.com/fifthidea/sub/main/sub/sub-full-base64.txt|
+| ✅ | 8746 | 15m |https://raw.githubusercontent.com/fifthidea/sub/main/sub/sub-full-base64.txt|
 | ✅ | 1751 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt|
 | ✅ | 1543 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0005.txt|
 | ✅ | 1436 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0006.txt|
 | ✅ | 1897 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/stable/v2ray-base64-0001.txt|
 | ✅ | 936 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/stable/v2ray-base64-0002.txt|
 | ✅ | 19722 | 12h |https://raw.githubusercontent.com/Eleven1985/Scrape-By-Country/main/configs/protocols/AllProtocols.txt|
-| ✅ | 4674 | 30m |https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt|
+| ✅ | 4673 | 30m |https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt|
 | ✅ | 2590 | 2h |https://raw.githubusercontent.com/Argh94/Proxy-List/main/All_Config.txt|
 | ✅ | 934 | 6h |https://raw.githubusercontent.com/yy1588133/proxy-pool/main/v2ray.txt|
 | ✅ | 393 | 12h |https://raw.githubusercontent.com/jagger235711/V2rayCollector/main/results/mixed_tested.txt|
