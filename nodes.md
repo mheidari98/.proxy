@@ -12,7 +12,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 15 | idk |https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt|
 | ✅ | 8047 | 4h |https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/all_valid_proxies.txt|
 | ✅ | 11128 | 1h |https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt|
-| ✅ | 8972 | 15m |https://raw.githubusercontent.com/fifthidea/sub/main/sub/sub-full-base64.txt|
+| ✅ | 8966 | 15m |https://raw.githubusercontent.com/fifthidea/sub/main/sub/sub-full-base64.txt|
 | ✅ | 1751 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt|
 | ✅ | 1543 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0005.txt|
 | ✅ | 1436 | 1h |https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/all-verified/v2ray-base64-0006.txt|
@@ -30,7 +30,7 @@ public proxy node - gather and store @ [.proxy](https://github.com/mheidari98/.p
 | ✅ | 308 | 4h |https://raw.githubusercontent.com/Nima-Monajjemy/v2ray-configs/main/configs.txt|
 | ✅ | 685 | 4h |https://raw.githubusercontent.com/Nima-Monajjemy/v2ray-configs-nofolter/main/configs.txt|
 | ✅ | 133 | 1d |https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt|
-| ✅ | 1965 | 4h |https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/main/sub/mix|
+| ✅ | 1955 | 4h |https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/main/sub/mix|
 | ✅ | 119 | 1d |https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub|
 | ✅ | 4072 | 30m |https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt|
 | ✅ | 4615 | 1h |https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt|
