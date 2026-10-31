@@ -10,7 +10,7 @@ on:
       - 'tests/**'
       - '.github/workflows/update.yml'
   schedule:
-    - cron: '0 */1 * * *'  # @hourly
+    - cron: '17 * * * *'  # hourly, off :00 (GitHub delays/drops top-of-hour schedules)
 
 # Serialized with every other workflow that pushes to main.
 concurrency:
